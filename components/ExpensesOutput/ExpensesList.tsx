@@ -7,7 +7,7 @@ interface ExpensesListProps {
   expenses: IExpense[];
 }
 
-const recderExpenseItem: ListRenderItem<IExpense> = (itemData) => {
+const renderExpenseItem: ListRenderItem<IExpense> = (itemData) => {
   return <ExpenseItem {...itemData.item} />;
 };
 
@@ -15,7 +15,7 @@ const ExpensesList: React.FC<ExpensesListProps> = ({ expenses }) => {
   return (
     <FlatList
       data={expenses}
-      renderItem={recderExpenseItem}
+      renderItem={renderExpenseItem}
       keyExtractor={(item) => item.id}
     />
   );
