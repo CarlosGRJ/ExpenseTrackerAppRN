@@ -39,7 +39,6 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({
     inputIdentifier: string,
     enteredValue?: string,
   ) => {
-    console.log('enteredValue ', enteredValue);
     setInputs((curInputs) => {
       return {
         ...curInputs,

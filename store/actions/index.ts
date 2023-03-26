@@ -6,6 +6,11 @@ interface AddExpenseAction {
   payload: INewExpense;
 }
 
+interface SetExpensesAction {
+  type: ActionType.SET;
+  payload: IExpense[];
+}
+
 interface UpdateExpenseAction {
   type: ActionType.UPDATE;
   payload: IExpense;
@@ -18,5 +23,6 @@ interface DeleteExpenseAction {
 
 export type Action =
   | AddExpenseAction
+  | SetExpensesAction
   | UpdateExpenseAction
   | DeleteExpenseAction;

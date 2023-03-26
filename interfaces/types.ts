@@ -13,7 +13,7 @@ export interface IExpense {
 }
 
 export interface INewExpense {
-  id?: string;
+  name: string;
   description: string;
   amount: number;
   date: Date;
